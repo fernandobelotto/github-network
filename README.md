@@ -2,6 +2,9 @@
 
 A React application that visualizes the follower and following relationships between GitHub users as an interactive network graph.
 
+![CleanShot 2025-03-04 at 09 44 51@2x](https://github.com/user-attachments/assets/066796ea-3d6a-4919-aaac-5f9b08688629)
+
+
 ## Features
 
 - Input multiple GitHub usernames to analyze
