@@ -1,30 +1,84 @@
-# Project Overview
+# GitHub Network Visualizer
 
-This is the complete vite template for a new project. It includes the following features:
+A React application that visualizes the follower and following relationships between GitHub users as an interactive network graph.
 
-## Dependencies
+## Features
 
-• Node.js and npm or yarn  
-• Any additional libraries or frameworks needed for your specific implementation
+- Input multiple GitHub usernames to analyze
+- Visualize connections between users in an interactive network graph
+- Distinguish between follower, following, and mutual relationships
+- View user profile information on hover
+- Zoom and pan functionality for exploring large networks
+- Responsive design for different screen sizes
+
+## Technologies Used
+
+- React
+- TypeScript
+- D3.js for network visualization
+- Octokit for GitHub API integration
+- TailwindCSS for styling
+- React Hook Form with Zod for form validation
+- Sonner for toast notifications
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/github-network-visualizer.git
+cd github-network-visualizer
+```
+
+2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Start the development server
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+4. Open your browser and navigate to `http://localhost:5173`
 
 ## Usage
 
-• Run the development server:
+1. Enter one or more GitHub usernames in the form
+2. Click "Generate Network Graph" to visualize the network
+3. Interact with the graph:
+   - Hover over nodes to see user information
+   - Click on nodes to open the user's GitHub profile
+   - Drag nodes to rearrange the network
+   - Scroll to zoom in/out
+   - Drag the background to pan
 
-```bash
-npm run start
-```
+## GitHub API Rate Limits
 
-• Build the project for production:
+This application uses the GitHub API, which has rate limits:
+- For unauthenticated requests: 60 requests per hour
+- For authenticated requests: 5,000 requests per hour
 
-```bash
-npm run build
-```
+The current implementation uses unauthenticated requests. For higher rate limits, you would need to implement GitHub authentication.
 
-## Testing
+## Future Enhancements
 
-• Run the test suite:
+- Add GitHub authentication for higher API rate limits
+- Implement more network analysis metrics
+- Add filters to show specific types of relationships
+- Support for organizations and repositories
+- Export network data as JSON or CSV
 
-```bash
-npm test
-```
+## License
+
+MIT

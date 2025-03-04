@@ -1,11 +1,10 @@
-import { SimpleForm } from "./form/simple-form";
+import { GitHubNetworkPage } from "./pages/GitHubNetworkPage";
 
 function App() {
   return (
     <>
-      <div className="flex flex-col items-center justify-center h-screen">
-        <h1>Time to build </h1>
-        <SimpleForm />
+      <div className="min-h-screen bg-gray-50">
+        <GitHubNetworkPage />
       </div>
     </>
   );
